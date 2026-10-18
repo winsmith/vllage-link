@@ -1,0 +1,20 @@
+{
+  "name": "vllage-link",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "favicon": "node scripts/favicon.mjs"
+  },
+  "dependencies": {
+    "animejs": "4.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "tailwindcss": "4.3.3",
+    "vite": "8.3.4"
+  }
+}

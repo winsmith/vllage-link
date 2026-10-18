@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>vllage: the people who matter</title>
+    <meta
+      name="description"
+      content="vllage is a personal relationship manager for Mac and iPhone that remembers who you know, how you know them and what's coming up"
+    />
+    <meta name="theme-color" content="#020605" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/DepartureMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="vllage" />
+    <meta property="og:title" content="vllage: the people who matter" />
+    <meta
+      property="og:description"
+      content="vllage is a personal relationship manager for Mac and iPhone that remembers who you know, how you know them and what's coming up"
+    />
+    <meta property="og:image" content="https://vllage.link/og.png" />
+    <meta property="og:url" content="https://vllage.link/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="me" href="https://social.telemetrydeck.com/@daniel" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="min-h-screen overflow-x-hidden text-16 md:text-22">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-turq-400 focus:px-4 focus:py-2 focus:text-ink"
+      >Skip to content</a
+    >
+
+    <header class="mx-auto flex max-w-[1210px] items-center justify-between px-4 py-6 sm:px-6 lg:px-11">
+      <a href="/" class="flex items-center gap-3 text-turq-100 hover:text-turq-50" aria-label="vllage home">
+        <span data-logo class="block size-8"></span>
+        <span class="text-22 lowercase">vllage</span>
+      </a>
+      <nav aria-label="Sections" class="flex gap-6 text-11 uppercase tracking-wider sm:text-16">
+        <a href="#features" class="text-turq-300 hover:text-turq-50">Features</a>
+        <a href="#follow" class="text-turq-300 hover:text-turq-50">Follow</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section
+        class="mx-auto grid max-w-[1210px] items-center gap-10 px-4 pt-6 pb-16 sm:px-6 lg:grid-cols-[1fr_1.15fr] lg:gap-14 lg:px-11 lg:pt-10 lg:pb-24"
+      >
+        <div class="order-2 lg:order-1">
+          <h1 class="text-33 text-turq-50 uppercase md:text-44 xl:text-55">The people who matter</h1>
+          <div class="lines mt-6 max-w-[36ch] text-turq-200 md:mt-8">
+            <p>vllage is a personal relationship manager for Mac and iPhone</p>
+            <p>It remembers who you know, how you know them and what's coming up</p>
+            <p>That makes it easier to stay in touch with family, friends and colleagues</p>
+          </div>
+          <div class="mt-6 text-16 text-turq-400 md:text-22">
+            <p>&gt; vllage is in active development</p>
+            <p>
+              &gt; It will be free when it launches<span class="cursor-block ml-1" aria-hidden="true"></span>
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a class="btn btn-solid" href="https://social.telemetrydeck.com/@daniel" rel="me noopener">
+              Follow on Mastodon <span data-pixel="arrow" class="inline-block h-[10px]"></span>
+            </a>
+            <a class="btn btn-line" href="https://bsky.app/profile/breakth-esystem.bsky.social" rel="noopener">
+              Follow on Bluesky <span data-pixel="arrow" class="inline-block h-[10px]"></span>
+            </a>
+          </div>
+        </div>
+
+        <figure class="order-1 lg:order-2">
+          <div data-hero class="relative mx-auto w-full max-w-[640px]">
+            <svg class="pixel block h-auto w-full" aria-hidden="true" focusable="false"></svg>
+            <div class="rel-labels pointer-events-none absolute inset-0" aria-hidden="true"></div>
+          </div>
+          <figcaption class="mt-4 text-center text-11 text-turq-600 uppercase">
+            <p>Figure 1: 61 randomly generated people</p>
+            <p>Click a face to generate a new one</p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="shade-band text-22" aria-hidden="true">
+        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+      </div>
+
+      <!-- Problem -->
+      <section
+        class="relative mx-auto grid max-w-[1210px] gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-11 lg:py-28"
+      >
+        <div data-faces="3" data-shape="row" class="absolute right-11 bottom-9 hidden w-[160px] xl:block"></div>
+        <div>
+          <h2 class="text-22 text-turq-50 uppercase sm:text-33 md:text-44">Your phone helps you remember</h2>
+          <div class="lines mt-8 max-w-[40ch]">
+            <p>Your contacts app stores phone numbers and addresses</p>
+            <p>vllage also stores the context, such as who introduced you and whose child just started school</p>
+            <p>It reminds you of birthdays, anniversaries and promised calls before they are due</p>
+          </div>
+        </div>
+
+        <figure class="self-center">
+          <pre
+            class="ticket overflow-x-auto py-6 pr-5 pl-12 text-11 leading-[16.5px] text-turq-200 sm:text-16 sm:leading-[22px] xl:text-22 xl:leading-[33px]"
+            role="img"
+            aria-label="An example person in vllage: Shallan Davar, artist and scholar. She is married to Adolin Kholin, works with Veil, was introduced to you by Brandon S. and mentors Gaz. Her birthday is on 14 March, there is a note to ask about her new sketchbook, and you last spoke six weeks ago."
+          >
+<span class="text-turq-50">SHALLAN DAVAR</span>
+Artist · Scholar
+────────────────────────────────
+married to ....... Adolin Kholin
+works with ....... Veil
+introduced you ... Brandon S.
+mentor of ........ Gaz
+────────────────────────────────
+<span class="text-turq-400">► birthday ....... 14 Mar</span>
+► ask about the new sketchbook
+► last spoke ..... 6 weeks ago</pre>
+          <figcaption class="mt-3 text-11 text-turq-600 uppercase">
+            Figure 2: A person in vllage with relationships, dates and notes
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="scroll-mt-6 border-t border-turq-900">
+        <div class="relative mx-auto max-w-[1210px] px-4 py-20 sm:px-6 lg:px-11 lg:py-28">
+          <div data-faces="2" class="absolute top-20 right-11 hidden w-[150px] xl:block"></div>
+          <h2 class="max-w-[22ch] text-22 text-turq-50 uppercase sm:text-33 md:text-44">Keep it in mind</h2>
+          <p class="mt-6 max-w-[52ch] text-turq-300">Some features ship at launch and the rest follow in updates</p>
+
+          <ul class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <li class="ticket py-7 pr-6 pl-12">
+              <h3 class="flex items-center gap-3 text-16 text-turq-50 uppercase md:text-22">
+                <span data-pixel="note" class="block h-[18px] text-turq-400"></span>Write down what you know
+              </h3>
+              <div class="lines mt-4 text-16 text-turq-200">
+                <p>Each person has a name, nickname, employer and job title</p>
+                <p>Free-form notes hold everything else, like a pet's name or the book you promised to lend</p>
+              </div>
+            </li>
+            <li class="ticket py-7 pr-6 pl-12">
+              <h3 class="flex items-center gap-3 text-16 text-turq-50 uppercase md:text-22">
+                <span data-pixel="graph" class="block h-[18px] text-turq-400"></span>See how everyone is connected
+              </h3>
+              <div class="lines mt-4 text-16 text-turq-200">
+                <p>Relationships include colleague, partner, mentor, family and the person who introduced you</p>
+                <p>Each relationship reads correctly from both sides</p>
+                <p>A map, groups, tags and search help you find people</p>
+              </div>
+            </li>
+            <li class="ticket py-7 pr-6 pl-12">
+              <h3 class="flex items-center gap-3 text-16 text-turq-50 uppercase md:text-22">
+                <span data-pixel="calendar" class="block h-[18px] text-turq-400"></span>Never miss a date
+              </h3>
+              <div class="lines mt-4 text-16 text-turq-200">
+                <p>vllage reminds you of birthdays and anniversaries a few days ahead</p>
+                <p>Todos have due dates and reminders</p>
+                <p>A digest every Monday morning lists the week ahead</p>
+              </div>
+            </li>
+            <li class="ticket py-7 pr-6 pl-12">
+              <h3 class="flex items-center gap-3 text-16 text-turq-50 uppercase md:text-22">
+                <span data-pixel="bubble" class="block h-[18px] text-turq-400"></span>Keep in touch
+              </h3>
+              <div class="lines mt-4 text-16 text-turq-200">
+                <p>A log records when you last spoke to someone</p>
+                <p>You can set how often you want to be in touch</p>
+                <p>Each person links to their Apple Contacts card and their LinkedIn, Mastodon, Bluesky or GitHub profile</p>
+              </div>
+            </li>
+            <li class="ticket py-7 pr-6 pl-12">
+              <h3 class="flex items-center gap-3 text-16 text-turq-50 uppercase md:text-22">
+                <span data-pixel="import" class="block h-[18px] text-turq-400"></span>Bring your people with you
+              </h3>
+              <div class="lines mt-4 text-16 text-turq-200">
+                <p>vllage imports vCard and CSV files, including the LinkedIn connections export</p>
+                <p>A preview shows likely duplicates before anything is saved</p>
+              </div>
+            </li>
+            <li class="ticket py-7 pr-6 pl-12">
+              <h3 class="flex items-center gap-3 text-16 text-turq-50 uppercase md:text-22">
+                <span data-pixel="devices" class="block h-[18px] text-turq-400"></span>On your Mac and iPhone
+              </h3>
+              <div class="lines mt-4 text-16 text-turq-200">
+                <p>Your data syncs between your devices and stays readable offline</p>
+                <p>A browser version, widgets, Shortcuts and Spotlight search are planned</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Privacy and the never list -->
+      <section class="border-t border-turq-900">
+        <div
+          class="relative mx-auto grid max-w-[1210px] gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-11 lg:py-28"
+        >
+          <div data-faces="2" data-shape="row" class="absolute right-11 bottom-9 hidden w-[108px] xl:block"></div>
+          <div>
+            <h2 class="flex items-start gap-4 text-22 text-turq-50 uppercase sm:text-33 md:text-44">
+              <span data-pixel="lock" class="mt-1 block h-[22px] shrink-0 text-turq-400 md:mt-2 md:h-[33px]"></span>
+              Your data is yours alone
+            </h2>
+            <div class="lines mt-8 max-w-[40ch]">
+              <p>The vllage server only syncs your data between your devices</p>
+              <p>Nothing you write is shared with other users</p>
+              <p>Email addresses and phone numbers from Apple Contacts reach the server only as hashes</p>
+              <p>You can export all your data and delete your account at any time</p>
+            </div>
+          </div>
+
+          <div class="self-center border-2 border-turq-700 bg-ink-2">
+            <p class="border-b-2 border-turq-700 px-6 py-3 text-16 text-turq-50 uppercase md:text-22">
+              vllage will never
+            </p>
+            <ul class="divide-y divide-turq-900">
+              <li class="flex gap-4 px-6 py-4">
+                <span data-pixel="never" class="mt-1.5 block h-[11px] shrink-0 text-turq-400"></span>
+                <span>share your people, or anything about them, with another user</span>
+              </li>
+              <li class="flex gap-4 px-6 py-4">
+                <span data-pixel="never" class="mt-1.5 block h-[11px] shrink-0 text-turq-400"></span>
+                <span>message anyone on your behalf</span>
+              </li>
+              <li class="flex gap-4 px-6 py-4">
+                <span data-pixel="never" class="mt-1.5 block h-[11px] shrink-0 text-turq-400"></span>
+                <span>scrape LinkedIn, Mastodon, Bluesky or anywhere else</span>
+              </li>
+              <li class="flex gap-4 px-6 py-4">
+                <span data-pixel="never" class="mt-1.5 block h-[11px] shrink-0 text-turq-400"></span>
+                <span>turn your friends into a sales pipeline</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Free and self-hosting -->
+      <section class="border-t border-turq-900">
+        <div class="dither">
+          <div class="relative mx-auto max-w-[1210px] px-4 py-20 sm:px-6 lg:px-11 lg:py-28">
+            <div data-faces="5" class="absolute top-1/2 right-11 hidden w-[300px] -translate-y-1/2 xl:block"></div>
+            <div class="max-w-[760px] border border-turq-800 bg-ink p-6 md:p-11">
+              <h2 class="text-22 text-turq-50 uppercase sm:text-33 md:text-44">vllage will be free</h2>
+              <div class="lines mt-8">
+                <p>The Mac and iPhone apps will be free to download</p>
+                <p>A package to run the sync server on your own hardware is planned</p>
+              </div>
+              <p class="mt-8">
+                <a
+                  class="text-turq-400 underline decoration-turq-700 underline-offset-4 hover:text-turq-100"
+                  href="https://github.com/winsmith/village"
+                  rel="noopener"
+                  >Read the source on GitHub <span data-pixel="arrow" class="inline-block h-[10px]"></span
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="shade-band text-22" aria-hidden="true">
+        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+      </div>
+
+      <!-- Check back -->
+      <section id="follow" class="scroll-mt-6">
+        <div class="relative mx-auto max-w-[1210px] px-4 py-20 sm:px-6 lg:px-11 lg:py-28">
+          <div data-faces="4" class="absolute top-16 right-11 hidden w-[260px] xl:block"></div>
+          <h2 class="max-w-[20ch] text-22 text-turq-50 uppercase sm:text-33 md:text-44">Check back for more information</h2>
+          <div class="lines mt-8 max-w-[48ch]">
+            <p>vllage is not available to download yet</p>
+            <p>This page will show screenshots, a release date and more details closer to launch</p>
+            <p>Follow the project on Mastodon, Bluesky or GitHub for updates</p>
+          </div>
+          <div data-faces="3" class="mt-10 w-[150px] xl:hidden"></div>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a class="btn btn-solid" href="https://social.telemetrydeck.com/@daniel" rel="me noopener">
+              Follow on Mastodon <span data-pixel="arrow" class="inline-block h-[10px]"></span>
+            </a>
+            <a class="btn btn-line" href="https://bsky.app/profile/breakth-esystem.bsky.social" rel="noopener">
+              Follow on Bluesky <span data-pixel="arrow" class="inline-block h-[10px]"></span>
+            </a>
+            <a class="btn btn-line" href="https://github.com/winsmith/village" rel="noopener">
+              Watch on GitHub <span data-pixel="arrow" class="inline-block h-[10px]"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-turq-900">
+      <div
+        class="mx-auto flex max-w-[1210px] flex-wrap items-baseline justify-between gap-4 px-4 py-8 text-11 text-turq-600 sm:px-6 lg:px-11"
+      >
+        <p>vllage · © 2026 Daniel Jilg</p>
+        <p>
+          <a href="/privacy/" class="hover:text-turq-300">Privacy</a> ·
+          <a href="/impressum/" class="hover:text-turq-300">Impressum</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
