@@ -20,7 +20,7 @@ Set `VITE_TELEMETRYDECK_APP_ID` (in `.env.local` or the build environment) to tu
 
 ## Deployment
 
-Every push to `main` builds the site and publishes it to GitHub Pages at https://vllage.link through `.github/workflows/pages.yml`. In the repository settings, Pages must use "GitHub Actions" as its source and `vllage.link` as the custom domain. For analytics, set the repository variable `TELEMETRYDECK_APP_ID`.
+Every push to `main` builds the site and publishes it to GitHub Pages at https://www.vllage.link through `.github/workflows/pages.yml`. In the repository settings, Pages must use "GitHub Actions" as its source and `www.vllage.link` as the custom domain. For analytics, set the repository variable `TELEMETRYDECK_APP_ID`.
 
 ## Licences
 

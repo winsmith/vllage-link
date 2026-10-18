@@ -195,7 +195,7 @@ TelemetryDeck loads only when `VITE_TELEMETRYDECK_APP_ID` is set at build time.
 
 ### Hosting
 
-GitHub Pages, deployed by `.github/workflows/pages.yml` on every push to `main`: `npm ci`, `npm run build`, then `dist/` is published. The custom domain `vllage.link` is set in the repository's Pages settings (no `CNAME` file needed with an Actions deployment), with A/AAAA records pointing at GitHub's Pages addresses and HTTPS enforced. The build reads the TelemetryDeck app ID from the repository variable `TELEMETRYDECK_APP_ID`.
+GitHub Pages, deployed by `.github/workflows/pages.yml` on every push to `main`: `npm ci`, `npm run build`, then `dist/` is published. The canonical address is `https://www.vllage.link`, set as the custom domain in the repository's Pages settings (no `CNAME` file needed with an Actions deployment). DNS at Hetzner: `www` is a CNAME to `winsmith.github.io.` (with the trailing dot, or the zone name gets appended), and the apex `vllage.link` has GitHub's Pages A/AAAA records so GitHub redirects it to `www`. HTTPS is enforced. Absolute URLs in the page (`og:url`, `og:image`, `rel="canonical"`) and the legal pages use the `www` address. The build reads the TelemetryDeck app ID from the repository variable `TELEMETRYDECK_APP_ID`.
 
 The site must stay served from the domain root: pages link to `/fonts/…`, `/favicon.svg`, `/impressum/` and `/privacy/` absolutely, so the `*.github.io/vllage-link/` address does not work without a Vite `base` and rewritten links.
 
@@ -208,4 +208,4 @@ Moved from the earlier plan of Hetzner behind Caddy on 2026-10-18.
 - TelemetryDeck app ID for production builds (repository variable `TELEMETRYDECK_APP_ID`).
 - At launch: App Store button as the primary CTA, screenshots, the app's own privacy policy, refresh `og.png`.
 - A German translation, if visitors ask for it.
-- Final app name after trademark and App Store checks; the domain is assumed to be vllage.link.
+- Final app name after trademark and App Store checks; the site lives at www.vllage.link until then.
