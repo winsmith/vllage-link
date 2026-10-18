@@ -169,7 +169,7 @@ Made as unobtrusive as German law allows, by request. §5 DDG asks for an imprin
 - One footer link labelled **Impressum** (a label courts accept), last and smallest item on the page, `turq-600` (still ≥ 4.5:1).
 - No address on the main page. `/impressum/` and `/privacy/` carry `noindex`, are linked nowhere else and appear in no navigation.
 - The imprint must keep an email address (fast electronic contact is mandatory). Current: Daniel Jilg, Lengerckestieg 5, 22041 Hamburg, winsmith@winsmith.de.
-- The privacy notice exists because of server logs and TelemetryDeck. If either changes (another analytics tool, an embed, a form), update it in the same commit.
+- The privacy notice exists because of the host's access logs (GitHub Pages) and TelemetryDeck. If either changes (another host, another analytics tool, an embed, a form), update it in the same commit.
 
 Neither page has had a lawyer's review.
 
@@ -193,12 +193,19 @@ Vite 8 (multi-page), Tailwind CSS 4 through `@tailwindcss/vite`, anime.js 4.5; v
 
 TelemetryDeck loads only when `VITE_TELEMETRYDECK_APP_ID` is set at build time.
 
+### Hosting
+
+GitHub Pages, deployed by `.github/workflows/pages.yml` on every push to `main`: `npm ci`, `npm run build`, then `dist/` is published. The custom domain `vllage.link` is set in the repository's Pages settings (no `CNAME` file needed with an Actions deployment), with A/AAAA records pointing at GitHub's Pages addresses and HTTPS enforced. The build reads the TelemetryDeck app ID from the repository variable `TELEMETRYDECK_APP_ID`.
+
+The site must stay served from the domain root: pages link to `/fonts/…`, `/favicon.svg`, `/impressum/` and `/privacy/` absolutely, so the `*.github.io/vllage-link/` address does not work without a Vite `base` and rewritten links.
+
+Moved from the earlier plan of Hetzner behind Caddy on 2026-10-18.
+
 ## Open items
 
 - Real social handles: the Mastodon (`@daniel@social.telemetrydeck.com`) and Bluesky (`breakth-esystem.bsky.social`) links are placeholders to be replaced.
 - `winsmith/village` is private; the GitHub links go live when it is made public.
-- TelemetryDeck app ID for production builds.
-- Deployment to Hetzner (static `dist/` behind Caddy); confirm the server log retention stated in the privacy notice (14 days).
+- TelemetryDeck app ID for production builds (repository variable `TELEMETRYDECK_APP_ID`).
 - At launch: App Store button as the primary CTA, screenshots, the app's own privacy policy, refresh `og.png`.
 - A German translation, if visitors ask for it.
 - Final app name after trademark and App Store checks; the domain is assumed to be vllage.link.
